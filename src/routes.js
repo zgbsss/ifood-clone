@@ -18,11 +18,22 @@ export default function Routes() {
                 <BottomTab.Screen
                     name="Home"
                     component={Home}
-                    options={{}}
+                    options={{
+                        tabBarLabel: 'Home',
+                        tabBarIcon: ({color}) => (
+                            <MaterialIcons name="home" color={color} size={26}/>
+                        ),
+                    }}
                 />
                 <BottomTab.Screen
                     name="Busca"
                     component={Busca}
+                    options={{
+                        tabBarLabel: 'Busca',
+                        tabBarIcon: ({color}) => (
+                            <MaterialIcons name="search" color={color} size={26}/>
+                        )
+                    }}
                 />
                 <BottomTab.Screen
                     name="Perfil"
