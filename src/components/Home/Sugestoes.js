@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Image, ScrollView, Text, TouchableOpacity, StyleSheet } from "react-native";
-
 import api from '../../services/api';
 
 export default function Sugestoes() {
@@ -12,6 +11,7 @@ export default function Sugestoes() {
         }
         carregarSugestoes();
     }, []);
+    
     return (
         <ScrollView showsHorizontalScrollIndicator={false} style={styles.lista}>
             {sugestoes.map((sugestao) => (
